@@ -3,3 +3,81 @@
   padding: 0;
   top: 0;
 }
+
+html,
+body,
+#full-page {
+  height: 100%;
+}
+
+#full-page {
+  width: 100vw;
+  background-color: darkkhaki;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: darkorchid;
+}
+
+#make-list {
+  width: 80px;
+}
+
+.head-foot {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+#create {
+  width: min-content;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  background-color: darkred;
+  margin: 20px auto;
+  border: 5px solid gray;
+  border-radius: 10px;
+}
+
+.unhide {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.list-item {
+  color: gray;
+  border-radius: 5px;
+  text-align: center;
+  margin: 5px;
+  width: 200px;
+  height: 20px;
+  background-color: whitesmoke;
+}
+
+#create button {
+  background-color: cornflowerblue;
+  color: black;
+}
+
+#show {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#footer {
+  background-color: darkorange;
+  position: fixed;
+  top: 90%;
+  left: 0;
+}
