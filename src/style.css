@@ -81,3 +81,11 @@ body,
   top: 90%;
   left: 0;
 }
+
+.projects {
+  margin: 20px;
+  background-color: cadetblue;
+  border-radius: 10px;
+  border: 3px solid rgb(68, 103, 104);
+  
+}
