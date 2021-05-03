@@ -17,14 +17,48 @@
           <li>three</li>
         </ul>
         <form action="" id="add-project">
-          <input type="text" name="new-project" id="new-project">
+          <button>+</button>
+          <input type="text" name="new-project" id="new-project" />
         </form>
       </div>
       <div id="active-list">
-      </div>
-      <div id="footer" class='footer'>
-        <p>created by: Jonathan Potter</p>
-        <p>April 2021</p>
+        <h3 id="active-title">active title</h3>
+        <div id="date-container">
+          <select name="date-type" id="cars">
+            <option value="date-due">Date Due</option>
+            <option value="date-start">Date Started</option>
+            <option value="day">Day</option>
+            <option value="month">Month</option>
+          </select>
+          <input type="date" name="date" />
+        </div>
+        <div id="list-container">
+          <div id="list-head">
+            <span>done</span>
+            <span>todo item</span>
+            <span>flag</span>
+            <span>delete</span>
+          </div>
+          <div id="list">
+            <button class="btn" id="done">o</button>
+            <span class="list-item">list item</span>
+            <button class="btn">!</button>
+            <button class="btn">x</button>
+          </div>
+          <form action="">
+            <button class="btn">+</button>
+            <input type="text" name="add-item" id="add-item" placeholder="new item"/>
+          </form>
+          <div id="remove">
+            <button class="btn">remove done</button>
+            <button class="btn">remove project</button>
+          </div>
+        </div>
+        </div>
+        <div id="footer" class="footer">
+          <p>created by: Jonathan Potter</p>
+          <p>April 2021</p>
+        </div>
       </div>
     </div>
     <script src="bundle.js"></script>
