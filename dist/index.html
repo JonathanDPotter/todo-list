@@ -11,56 +11,60 @@
       <h1 id="title">projects</h1>
       <div id="projects">
         <p id="project-name">project-name</p>
-        <ul id="project-list">
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-        </ul>
+        <ul id="project-list"></ul>
         <form action="" id="add-project">
-          <button>+</button>
+          <button id="new-project-button">+</button>
           <input type="text" name="new-project" id="new-project" />
         </form>
       </div>
-      <div id="active-list">
-        <h3 id="active-title">active title</h3>
-        <div id="date-container">
-          <select name="date-type" id="cars">
-            <option value="date-due">Date Due</option>
-            <option value="date-start">Date Started</option>
-            <option value="day">Day</option>
-            <option value="month">Month</option>
-          </select>
-          <input type="date" name="date" />
+      <div id="active-target"></div>
+      <div id="footer" class="footer">
+        <p>created by: Jonathan Potter</p>
+        <p>May 2021</p>
+      </div>
+    </div>
+    <script defer src="bundle.js"></script>
+  </body>
+
+  <!-- template for active-list below -->
+  <template id="template">
+    <div id="active-list">
+      <h3 id="active-title"></h3>
+      <div id="date-container">
+        <select name="date-type" id="cars">
+          <option value="date-due">Date Due</option>
+          <option value="date-start">Date Started</option>
+        </select>
+        <input type="date" name="date" />
+      </div>
+      <div id="list-container">
+        <div id="list-head">
+          <span>done</span>
+          <span>todo item</span>
+          <span>flag</span>
+          <span>delete</span>
         </div>
-        <div id="list-container">
-          <div id="list-head">
-            <span>done</span>
-            <span>todo item</span>
-            <span>flag</span>
-            <span>delete</span>
-          </div>
-          <div id="list">
-            <button class="btn" id="done">o</button>
-            <span class="list-item">list item</span>
-            <button class="btn">!</button>
-            <button class="btn">x</button>
-          </div>
-          <form action="">
-            <button class="btn">+</button>
-            <input type="text" name="add-item" id="add-item" placeholder="new item"/>
-          </form>
-          <div id="remove">
-            <button class="btn">remove done</button>
-            <button class="btn">remove project</button>
-          </div>
-        </div>
-        </div>
-        <div id="footer" class="footer">
-          <p>created by: Jonathan Potter</p>
-          <p>April 2021</p>
+        <div id="list"></div>
+        <form action="">
+          <button class="btn">+</button>
+          <input
+            type="text"
+            name="add-item"
+            id="add-item"
+            placeholder="new item"
+          />
+        </form>
+        <div id="remove">
+          <button class="btn" id="remove-done">remove done</button>
+          <button class="btn" id="remove-project">remove project</button>
         </div>
       </div>
     </div>
-    <script src="bundle.js"></script>
-  </body>
+  </template>
+  <template id="template-two">
+    <button class="btn done">o</button>
+    <span class="list-item">list item</span>
+    <button class="btn flag">!</button>
+    <button class="btn delete">x</button>
+  </template>
 </html>
