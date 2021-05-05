@@ -14,7 +14,7 @@
         <ul id="project-list"></ul>
         <form action="" id="add-project">
           <button id="new-project-button">+</button>
-          <input type="text" name="new-project" id="new-project" />
+          <input type="text" name="new-project" id="new-project" placeholder="add new project"/>
         </form>
       </div>
       <div id="active-target"></div>
@@ -24,6 +24,8 @@
       </div>
     </div>
     <script defer src="bundle.js"></script>
+    <script src="https://kit.fontawesome.com/49df7f434d.js" crossorigin="anonymous"></script>
+
   </body>
 
   <!-- template for active-list below -->
@@ -35,24 +37,16 @@
           <option value="date-due">Date Due</option>
           <option value="date-start">Date Started</option>
         </select>
-        <input type="date" name="date" />
+        <label>
+          date:
+        <input id="date" type="date" />
+        </label>
       </div>
       <div id="list-container">
-        <div id="list-head">
-          <span>done</span>
-          <span>todo item</span>
-          <span>flag</span>
-          <span>delete</span>
-        </div>
-        <div id="list"></div>
+        <div id="to-do-target"></div>
         <form action="">
-          <button class="btn">+</button>
-          <input
-            type="text"
-            name="add-item"
-            id="add-item"
-            placeholder="new item"
-          />
+          <button id="add-to-do" class="btn">+</button>
+          <input type="text" name="new-to-do" id="new-to-do" placeholder="add new to do item"/>
         </form>
         <div id="remove">
           <button class="btn" id="remove-done">remove done</button>
@@ -61,10 +55,12 @@
       </div>
     </div>
   </template>
+
+  <!-- template for to do items -->
   <template id="template-two">
-    <button class="btn done">o</button>
-    <span class="list-item">list item</span>
-    <button class="btn flag">!</button>
-    <button class="btn delete">x</button>
+      <button class="btn done"><i class="far fa-check-circle"></i></button>
+      <span class="list-item"></span>
+      <button class="btn flag">!</button>
+      <button class="btn delete">x</button>
   </template>
 </html>
