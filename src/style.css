@@ -6,15 +6,18 @@
   --darkblue: rgb(41, 82, 116);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  top: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+
 
 html,
 body,
 #full-page {
+  margin: 0;
   height: 100vh;
 }
 
@@ -66,9 +69,10 @@ button:hover {
   opacity: 0.7;
 }
 
-#new-project {
+#new-project,
+#new-to-do {
   width: 60%;
-  background-color: var(--blue);
+  background-color: inherit;
   border: none;
   border-bottom: 3px solid var(--darkblue);
   padding: 2px;
@@ -83,9 +87,9 @@ button:hover {
   opacity: 0.7;
 }
 
-#new-project:focus {
+#new-project:focus, #new-to-do:focus {
   outline: none;
-  background-color: var(--bright-blue);
+  background-color: rgba(255, 255, 255, .5);
   border-radius: 5px;
 }
 
@@ -125,7 +129,8 @@ input:focus {
 }
 
 #list-head,
-#list {
+#list, 
+#to-do-target {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr 1fr;
   text-justify: start;
@@ -138,6 +143,11 @@ input:focus {
 #list-head {
   text-decoration: underline;
   text-decoration-color: var(--darkblue);
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
 }
 
 .flagged {
