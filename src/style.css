@@ -190,3 +190,13 @@ input:focus {
   width: 100%;
   height: auto;
 }
+
+@media only screen and (max-width: 600px) {
+  #title {
+    font-size: 2rem;
+  }
+
+  #full-page {
+    grid-template-columns: 2fr 4fr 0fr;
+  }
+}
