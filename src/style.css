@@ -54,13 +54,13 @@ button:hover {
 #projects {
   grid-area: projects;
   width: 100%;
-  padding: 10px;
-  font-size: 15px;
+  padding: .7rem;
+  font-size: 1rem;
   margin: 0;
 }
 
 #project-list li {
-  margin-left: 20px;
+  margin-left: 1rem;
   list-style-type: circle;
   cursor: pointer;
 }
@@ -107,15 +107,14 @@ button:hover {
 }
 
 #active-title {
-  font-size: 25px;
-  margin: 5px;
+  font-size: 1.5rem;
+  margin: .5rem;
 }
 
 #date-container select,
 input {
-  background-color: var(--yellow);
+  background-color: inherit;
   border: none;
-  width: 40%;
   color: var(--darkblue);
 }
 
